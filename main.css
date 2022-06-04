@@ -1,0 +1,10 @@
+#imagerow{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.my_img{
+    border-radius: 10px;
+    padding-top: 25px;
+}
