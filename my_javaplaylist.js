@@ -1,7 +1,7 @@
 
 const getAuth = async () => {
-    const clientID = '0877cc559aba47c38da071823e36cfa5';
-    const clientSecret = '1150818a451843f783724216c2cee1a3';
+    const clientID = '';
+    const clientSecret = '';
     const encodedString = btoa(clientID + ':' + clientSecret);
     const response = await fetch('https://accounts.spotify.com/api/token',
         {
@@ -26,7 +26,7 @@ const loadToken = async () => {
 
 const getPlaylist = async () => {
     const token = await loadToken();
-    let response = await fetch (`https://api.spotify.com/v1/playlists/37i9dQZF1DWWylYLMvjuRG`,
+    let response = await fetch (`https://api.spotify.com/v1/playlists/0bYbF3NBwNft5QfB8JPIJC`,
     {
         method: 'GET',
         headers: {
@@ -105,14 +105,7 @@ const create_image = async (src, height, width, classs, id, aud) => {
     })
 }
 
-
-
-
-
-
-
-
-for (i = 1; i < 10; i++){
+for (i = 0; i < 10; i++){
     getSong(i)
 }
 
